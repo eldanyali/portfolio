@@ -75,6 +75,9 @@ npm run dev
 Then open your browser and go to:  
 👉 http://localhost:5173
 
+
+⚠️ Make sure to add a `.env` file with your EmailJS keys.
+
 ---
 
 ## 📬 Contact Me
