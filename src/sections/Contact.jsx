@@ -30,8 +30,8 @@ const Contact = () => {
     try {
       console.log("From submitted:", formData);
       await emailjs.send(
-       "service_r9qgrtq",
-        "template_egykq3f",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           to_name: "Elahe",
@@ -39,7 +39,7 @@ const Contact = () => {
           to_email: "elahednyl@gmail.com",
           message: formData.message,
         },
-        "2R8i9XTZaURulnVrl"       
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
