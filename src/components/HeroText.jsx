@@ -18,7 +18,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi , I'm Elahe
+          Hi,I'm Elahe
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
@@ -48,7 +48,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-          Currently studying at (UUT).
+          <br />Currently studying at (UUT).
           </motion.p>
         </div>
       </div>
@@ -91,7 +91,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Getting into Deep Learning
+            <br/> Getting into Deep Learning
           </motion.p>
         </div>
       </div>
